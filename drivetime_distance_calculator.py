@@ -2,7 +2,7 @@ import pandas as pd
 import googlemaps
 
 # Replace with your Google Maps API key
-API_KEY = 'AIzaSyBabGBKGmfj39jyn4P4XlcCYsG6KPsValA'
+API_KEY = 'AIzaSyDipSK_ZiMDYAkxPEK4gQa2YRQWA-V1jd8'
 gmaps = googlemaps.Client(key=API_KEY)
 
 # Load the Excel file
@@ -53,6 +53,6 @@ def process_addresses(file_path, output_path):
     print(f"File saved at {output_path}")
 
 if __name__ == "__main__":
-    input_file = 'C:/Reports/ForSimone/sample sheet.xlsx'  # Full path to your input Excel file
-    output_file = 'C:/Reports/ForSimone/output_with_roundtrip.xlsx'  # Full path for saving the output file
+    input_file = 'https://municipalgroup-my.sharepoint.com/:x:/r/personal/stosoni_dexter_ca/Documents/Documents/Routing_File.csv?d=w21cfe4e5dfad43a5a49537d17888214c&csf=1&web=1&e=QerCTX'  # Full path to your input Excel file
+    output_file = 'C:/Desktop/Routing_File_Done.csv'  # Full path for saving the output file
     process_addresses(input_file, output_file)
